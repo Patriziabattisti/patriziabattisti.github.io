@@ -1,2 +1,4 @@
 # MySwitchWebsite
-exercice where I create a website about myself
+exercice where I create a website about myself in a simple format
+
+
