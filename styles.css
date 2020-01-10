@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+html{
+    height:100%;
+    width:100%;
+}
+
+/*General layout*/
+
+body{
+    
+    display:flex;
+    flex-direction: column;
+    align-items:center; 
+    flex-wrap: wrap;
+    
+}
+
+        /*header and nav*/
+header{
+    background-color: #89a4b2;
+    width:100%;
+    padding:15px 30px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    height:10vh;
+}
+
+header nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li{
+    margin-right: 10px;
+}
+
+.links{
+    text-decoration: none;
+    color:white;
+}
+.links:hover{
+    color:#e5dfdf;
+    
+}
+
+.info{
+    font-weight: bold;
+    color:#89b289;
+}
+
+
+        /*articles and content*/
+
+section{
+    background-color: #dffff5;
+    
+    width:100%;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:40px;
+}
+
+.articles{
+    height:300px;
+    border-bottom:2px solid  #89a4b2;
+    width:80%;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.only{
+    justify-content: center;
+    height:85vh;
+}
+.articles:last-of-type{
+    border:none;
+}
+img{
+    width:auto;
+    height:190px;
+    margin:0 10px;
+}
+
+#me{
+    transform: rotate(90deg);
+
+}
+
+.articles:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+.text_about{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height:inherit;
+    padding:20px;
+    width:50%;
+    
+}
+.text_about p{
+    margin-top: 15px;
+    text-align: justify;
+}
+h3{
+    color:#3d4a52;
+}
+.text_about p{
+    color:#2f2e2e;
+}
+
+
+        /*footer*/
+
+footer{
+    width:100%;
+    background-color: #9fc79f;
+    padding:10px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    height:5vh;
+}
+.references a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/*Responsive design*/
+
+/*but really please don't watch it on mobile because really I didn't put enough time to think about the responsiveness of it*/
+
+/*Mobile*/
+
+@media only screen and (max-width:400px){
+    section{
+        margin:0 auto;
+    }
+    
+    .articles{
+        flex-direction:column-reverse;
+        justify-content: space-around;
+        
+        height:50vh;
+        width:100%; 
+    }
+    .articles:nth-of-type(2){
+        flex-direction:column-reverse;
+        
+    }
+    h1{
+        font-size:20px;
+    }
+   
+    img{
+        width:auto;
+        height:100px;
+        margin:0 ;
+        display:block;
+    }
+    .text_about{
+        width:85%;
+    }
+   
+    #about div{
+        height:40%;
+    }
+    
+}
+
+/*Tablet*/
+
+@media only screen and (min-width:401px) and (max-width:960px){
+    .articles{
+        flex-direction:column-reverse;
+        justify-content: space-around;
+        width:100%; 
+        height:50vh;
+    }
+    
+    .articles:nth-of-type(2){
+        flex-direction:column-reverse;
+    } 
+}
+
+/*Desktop*/ 
+
+@media only screen and (min-width:961px){
+    
+}
+
